@@ -1,273 +1,338 @@
 /*Begin your code here*/
 /*Requirement 1*/
 body{
-    margin: 0;
-    padding: 0;
-    font-size: 20pt;
-    font-family: "Verdana", sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  font-size: 20pt;
+  font-family: "Verdana", sans-serif;
+}
 
-  h1{
-    font-size: 2em;
-    text-align: center;
-    line-height: 3;
-  }
-  
-  h2{
-    font-size: 4em;
-    text-align: center;
-    padding: 1px;
-  }
-  
-  p {
-    padding: 15px 15px;
-    text-align: center;
-  }
+h1{
+  font-size: 2em;
+  text-align: center;
+  line-height: 3;
+}
 
-  #navposition{
-      font-weight: bold;
-	  background-color: rgb(255,250,250)
-  }
+h2{
+  font-size: 4em;
+  text-align: center;
+  padding: 1px;
+}
 
-  .nav_item a:hover, a:focus{
-    color: #ffffff;
-    text-decoration: underline;
-    -webkit-text-decoration-style: double
-            text-decoration-style: double;
-  }
+p {
+  padding: 15px 15px;
+  text-align: center;
+}
 
-  .nav_links{
-    width:100%;
-  }
+#navposition{
+    font-weight: bold;
+  background-color: rgb(255,250,250)
+}
 
-  *:focus{
-    border: 2px solid white;
-  }
+.nav_item a:hover, a:focus{
+  color: #ffffff;
+  text-decoration: underline;
+  -webkit-text-decoration-style: double
+          text-decoration-style: double;
+}
 
-  a.skip{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
-  }
+.nav_links{
+  width:100%;
+}
 
-  header{
-    background: rgb(0, 0, 0);
-    border-bottom: 10px solid #9ab6c1 ;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+*:focus{
+  border: 2px solid white;
+}
 
-  footer{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    padding: 1px;
-    margin-top: 100px;
-    text-align: center;
-  }
-  
-  .nav_links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: normal;
-  }
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
 
-  .nav_item a{
-    color:  #9ab6c1;
-    text-decoration: none;
-  }
-  
-  #logo{
+header{
+  background: rgb(0, 0, 0);
+  border-bottom: 10px solid #9ab6c1 ;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 1px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.nav_links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: normal;
+}
+
+.nav_item a{
+  color:  #9ab6c1;
+  text-decoration: none;
+}
+
+#logo{
+  display: block;
+  width: 100px;
+}
+
+.self > img{
     display: block;
-    width: 100px;
-  }
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
 
-  .self > img{
-      display: block;
-      width: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-bottom: 30px;
-  }
+.work h2, .work h2{
+    font-size: 50px;
+    padding-top: 20px;
+}
+.work p, .work p{
+    line-height: normal;
+    font-size: 15px;
+}
 
-  .work h2, .work h2{
-      font-size: 50px;
-      padding-top: 20px;
-  }
-  .work p, .work p{
-      line-height: normal;
-      font-size: 15px;
-  }
+.workimages{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  .workimages{
+.workimages > img{
+  border: 7.5px;
+  margin: 10px;
+  width: 250px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-auto-rows: max(50px, auto);
+  grid-row-gap: 30px;
+}
+
+.text {
+background-color: rgb(224,255,255, 0.9);
+color: white
+  padding: 5px;
+  align-self: center;
+  border: 4px solid black;
+  /*Your code here:*/
+}
+
+.text > p{
+  line-height: normal;
+  font-size: 17px;
+  /*Your code here:*/
+} 
+
+.NAPAWF
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  /*Your Code Here*/
+}
+
+.RAINN{
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  /*Your Code Here*/
+}
+
+
+.NAPAWF-logo, .mecc-logo, .tedx-logo, .clubtennis-image, .pct-image{
+  grid-column: 1/-1;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  max-height: 500px;
+  /*Your Code Here*/
+}
+
+
+.NAPAWF, .NAPAWF-logo{
+  grid-row-start: 1;
+  grid-row-end: span 1;
+}
+
+
+.RAINN, .RAINN-logo{
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+
+.wave {
+  font-size: 60px;
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.contact_container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 850px){
+
+  /*Requirement 10*/
+  header{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    /*Your code here again.*/  
   }
 
-  .workimages > img{
-    border: 7.5px;
-    margin: 10px;
-    width: 250px;
+  /*Requirement 10*/
+  .nav_links{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /*Your code here again.*/  
   }
 
-
-
-
-
-
-  .container{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-auto-rows: max(50px, auto);
-    grid-row-gap: 30px;
-  }
-
-  .text {
-	background-color: rgb(224,255,255, 0.9);
-	color: white
-    padding: 5px;
-    align-self: center;
-    border: 4px solid black;
-    /*Your code here:*/
-  }
-
-  .text > p{
-    line-height: normal;
-    font-size: 17px;
-    /*Your code here:*/
+  /*Requirement 11*/
+  .package {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 230px;
+    /*Your code here again.*/
   } 
 
-  .NAPAWF
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    /*Your Code Here*/
-  }
 
-  .RAINN{
-    grid-column-start: 2;
-    grid-column-end: span 2;
-    /*Your Code Here*/
-  }
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #9ab6c1;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #627B84;
+    }
+    
+    .contact_container {
+      border-radius: 5px;
+      padding: 20px;
+    }
+  
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+    }
+    
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.5;
+    }
 
-  .NAPAWF-logo, .mecc-logo, .tedx-logo, .clubtennis-image, .pct-image{
-    grid-column: 1/-1;
+    
+
+/*Requirement 12*/
+/*Add media query to handle reduced-motion*/
+/*Your code here again.*/ 
+@media (prefers-reduced-motion: reduce) {
+  #logo {
+    animation: none;
+  }
+}
+
+
+@media print { 
+  body{
+    background: none;
+  }
+  nav{
     width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    max-height: 500px;
-    /*Your Code Here*/
-  
   }
-  
-  .NAPAWF, .NAPAWF-logo{
-    grid-row-start: 1;
-    grid-row-end: span 1;
-  
+  .nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*Your code here again.*/
   }
-  
-  .RAINN, .RAINN-logo{
-    grid-row-start: 2;
-    grid-row-end: span 1;
-  
+
+  .price{
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-grow: 1;
+
   }
-  
-  }
-  @media screen and (min-width: 850px){
-  
-    /*Requirement 10*/
-    header{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      /*Your code here again.*/  
-    }
-  
-    /*Requirement 10*/
-    .nav_links{
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-      justify-content: flex-end;
-      /*Your code here again.*/  
-    }
-  
-    /*Requirement 11*/
     .package {
+      border: 2px solid #ffffff;
       display: flex;
       flex-direction: column;
-      flex-basis: 230px;
+      flex-basis: 200px;
       /*Your code here again.*/
     } 
-  }
-  
-  /*Requirement 12*/
-  /*Add media query to handle reduced-motion*/
-  /*Your code here again.*/ 
-  @media (prefers-reduced-motion: reduce) {
-    #logo {
-      animation: none;
+    .gallery{
+      display: none;
     }
-  }
-  
-  
-  @media print { 
-    body{
-      background: none;
+
+    #gallery{
+      display: none;
     }
-    nav{
-      width: 100%;
-    }
-    .nav_links{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      /*Your code here again.*/
-    }
-  
-    .price{
-      min-height: 500px;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-      flex-grow: 1;
-  
-    }
-      .package {
-        border: 2px solid #ffffff;
-        display: flex;
-        flex-direction: column;
-        flex-basis: 200px;
-        /*Your code here again.*/
-      } 
-      .gallery{
-        display: none;
-      }
-  
-      #gallery{
-        display: none;
-      }
-      /*Your code here*/
-      /*You must use flex.
-      /*Don't forget to vertically and horizontally 
-      align the element*/
-  }
-  
-  
-    /*Requirement 13*/
-    /*Requirement 14*/
-    /*Requirement 15*/
-    /*Requirement 16*/
-    /*Requirement 17*/
-    /*Requirement 18*/
-   
-  }
+    /*Your code here*/
+    /*You must use flex.
+    /*Don't forget to vertically and horizontally 
+    align the element*/
+}
+
+
+  /*Requirement 13*/
+  /*Requirement 14*/
+  /*Requirement 15*/
+  /*Requirement 16*/
+  /*Requirement 17*/
+  /*Requirement 18*/
+ 
+}

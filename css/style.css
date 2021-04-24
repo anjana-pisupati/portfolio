@@ -417,48 +417,6 @@ color: white
 }
 
 
-@media print { 
-  body{
-    background: none;
-  }
-  nav{
-    width: 100%;
-  }
-  .nav_links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /*Your code here again.*/
-  }
-
-  .price{
-    min-height: 500px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    flex-grow: 1;
-
-  }
-    .package {
-      border: 2px solid #ffffff;
-      display: flex;
-      flex-direction: column;
-      flex-basis: 200px;
-      /*Your code here again.*/
-    } 
-    .gallery{
-      display: none;
-    }
-
-    #gallery{
-      display: none;
-    }
-    /*Your code here*/
-    /*You must use flex.
-    /*Don't forget to vertically and horizontally 
-    align the element*/
-}
-
 
   /*Requirement 13*/
   /*Requirement 14*/
